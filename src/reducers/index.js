@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import cubes  from './cubes';
 
-const rootReducer = combineReducers({
-  state: (state = {}) => state
-});
+const reducers = {
+    cubes
+};
 
-export default rootReducer;
+module.exports = combineReducers(reducers);
